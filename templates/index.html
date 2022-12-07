@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h3>我是index页面：</h3>
+{% if current_user %}
+    <p>当前用户为：{{ current_user }}</p>
+{% else %}
+    <p><a href="login.html">请先登录</a></p>
+{% endif %}
+</body>
+</html>

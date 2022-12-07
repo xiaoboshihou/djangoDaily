@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<hr>
+{% for name in names %}
+<p>{{ forloop.counter0 }} {{ name }}</p>
+{% endfor %}
+
+<hr>
+{% for name in names reversed %}
+    <p>{{ forloop.counter0 }} {{ name }}</p>
+{% endfor %}
+
+<hr>
+{% for k, v in dic.items %}
+    <p>{{ forloop.counter }} {{ k }} {{ v }}</p>
+{% endfor %}
+
+<hr>
+{% for item in list1 %}
+    <p>{{ item }}</p>
+    {%  empty %}
+    <p>sorry, no value here</p>
+{% endfor %}
+<!---->
+</body>
+</html>
